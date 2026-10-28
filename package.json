@@ -1,0 +1,29 @@
+{
+  "name": "ci_siswa",
+  "version": "1.0.0",
+  "description": "CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure. More information can be found at the [official site](https://codeigniter.com).",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "esbuild app/Views/index.tsx --bundle --minify --outfile=public/js/app.js --define:process.env.NODE_ENV=\\\"production\\\"",
+    "dev": "esbuild app/Views/index.tsx --bundle --outfile=public/js/app.js --watch --define:process.env.NODE_ENV=\\\"development\\\"",
+    "check": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "lucide-react": "^1.62.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}
